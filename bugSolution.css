@@ -1,0 +1,12 @@
+To resolve the layout inconsistencies, consider using `display: flex` or `display: block` instead of `inline-block`. For example:
+
+```css
+div {
+  width: calc(50% - 10px);
+  display: block; /* Or display: flex; */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  margin: 5px; /* Add explicit margin for better control */
+}
+```
+
+Using `display: flex` offers better control over spacing and alignment.  If you opt for `display: block`, ensure you manage the spacing explicitly with margins or padding. `box-sizing: border-box` is also recommended to avoid unexpected width calculations due to padding and border inclusion.
