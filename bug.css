@@ -1,0 +1,10 @@
+The following CSS code results in unexpected behavior in certain browsers:
+
+```css
+div {
+  width: calc(50% - 10px);
+  display: inline-block;
+}
+```
+
+The `calc()` function calculates the width correctly, but the `inline-block` display may lead to inconsistent spacing and layout issues due to unexpected whitespace or margin collapse.
